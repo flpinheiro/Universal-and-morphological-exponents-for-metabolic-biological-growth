@@ -10,14 +10,14 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1532
-NormalPos.bottom=677
+NormalPos.top=32
+NormalPos.right=1916
+NormalPos.bottom=618
 Class=LaTeXView
 Document=template_1.tex
 
 [Frame0_View0,0]
-TopLine=426
+TopLine=480
 Cursor=1676
 
 [Frame1]
@@ -28,9 +28,9 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1532
-NormalPos.bottom=677
+NormalPos.top=32
+NormalPos.right=1916
+NormalPos.bottom=618
 Class=LaTeXView
 Document=template.tex
 
@@ -46,15 +46,15 @@ MinPos.y=-1
 MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1532
-NormalPos.bottom=677
+NormalPos.top=32
+NormalPos.right=1916
+NormalPos.bottom=618
 Class=LaTeXView
 Document=PB_article.tex
 
 [Frame2_View0,0]
-TopLine=466
-Cursor=28577
+TopLine=205
+Cursor=11772
 
 [SessionInfo]
 FrameCount=3
