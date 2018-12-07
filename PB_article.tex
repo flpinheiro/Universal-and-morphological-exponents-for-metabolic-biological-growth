@@ -1,4 +1,4 @@
-\documentclass[12pt]{iopart}
+\documentclass[10pt]{iopart}
 \usepackage{graphicx}
 \usepackage[british,UKenglish,USenglish,american]{babel}
 \usepackage[latin1]{inputenc}
@@ -6,23 +6,34 @@
 \usepackage{latexsym}
 
 \begin{document}
+
 \title{Universal and morphological exponents for metabolic biological growth}
 	\author{Felipe L. Pinheiro$^{1,}$, Andr\'{e} L. A. Penna$^2$, Fernando A. Oliveira$^{1,2}$}
 	\address{
-	$^1$ Instituto de F\'{i}sica, Universidade de Bras\'{i}lia, Brazil
+	$^1$ Instituto de Física, Universidade de Brasília, Brazil
 }
 	\address{
 	$^2$ International Center for Condensed Matter Physics, Universidade de Bras\'{i}lia, Brazil
 }
+\ead{flpinheiro@gmail.com}
+\ead{fao@gmail.com}
 %\date{Received: date / Accepted: date}
 
 
+%%acrescenta duas colunas
 %\maketitle
+%\ioptwocol
 
 \begin{abstract}
 In this work we investigated the biological growth exponents and we showed that they obey a combination of universal and empirical morphological exponents.  We applied these results for fishes and we obtained the exponents that describe their metabolic growth, and in addition we showed the influence of the exponents on the growth and the maturation time. We discuss the need to review some of the old empirical growth equations to give a better account of the data.\\
 \noindent{\it Keywords\/} Universal exponent, Morphological exponent, Metabolic growth
+%\keywords{Universal exponent \and Morphological exponent \and Metabolic growth}
+%\PACS{89.20.-a \and 89.75.-k \and 87.23.Cc }
+% \subclass{MSC code1 \and MSC code2 \and more}
 \end{abstract}
+
+%%acrescenta duas colunas
+\ioptwocol
 
 \section{Introduction}
 \label{intro}
@@ -44,9 +55,9 @@ the growth of fishes. We shall present here a generalization of this equation. N
 Eq. (\ref{NBer}).
 
 \section{Growth exponents}
-In this section we come to the central point of this work, the relationship between the exponents.
-Our starting point is that the growth mechanism is determined by the metabolic rate in such a way that the gain of mass at each time interval is due to major contributions: one which is proportional to the metabolic rate, which is the necessary energy to mass increment; the second term is the loss of matter that is proportional to the mass itself. Then it is given by
- \begin{equation}
+In this section we come to the central point of this work, the relationship between the exponents. Our starting point is that the growth mechanism is determined by the metabolic rate in such a way that the gain of mass at each time interval is due to major contributions: one which is proportional to the metabolic rate, which is the necessary energy to mass increment; the second term is the loss of matter that is proportional to the mass itself. Then it is given by
+
+\begin{equation}
 \frac{dM}{dt} =c_1 M^{\alpha}-c_2 M\,,
 \label{dM}
 \end{equation}
@@ -68,6 +79,7 @@ Here $\chi=M_0/M_\infty$, with $M_0=M(0)$ as the initial mass, $M_\infty = M(\in
 \end{equation}
 is the average time of growth.   Although the expression $\chi$ could be extremely small,
 $\epsilon_\alpha$ is not. For example for $\alpha=3/4$, $\delta=4$, a small $ \chi=0.01$, gives $\epsilon_{\alpha=3/4} \approx 0.32$,  which is a considerable amount compared with $1$. Consequently, it can not be neglected in Eq. (\ref{Mass}). However, there is  a "normal procedure" in the literature that consists of defining a time $t_0$ as in Eq. (\ref{Ber}) as $\exp(-t_0/\tau)=1-\epsilon_\alpha$. Even in the particular situation where we  consider $\epsilon_{\alpha}=0$, we can not consider  Eq (\ref{Ber}) as a good way to describe the growth phenomena, as we shall see below.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 For the value of $\alpha$ we have two extreme views: The classical works of  Bertalanffy  \cite{Bertalanffy38a,Bertalanffy57}, which associates the metabolic rate to heat dissipation, being in this way proportional to the surface area
 \begin{equation}
@@ -122,57 +134,93 @@ and
 \label{eq:par}
 \end{equation}
 
+
+%\begin{table}%
+%%\centering
+%\caption{\label{tab:alpha} Basal metabolic rate, $B = b_0 M^\alpha$. All regressions were calculated to standardize units (BMR in ml~O$_2$~h$^{-1}$, M in g). The averages are $\tilde{\alpha}$ = 0.72 $\pm$ 0.02 and $\tilde{b_0}$ = 3.4 $\pm$ 0.7.}
+%\begin{indented}
+%\item[] \begin{tabular}{ccccccccccccc}
+%\br
+%$b_0$ & 2.6  & 1.8  & 2.3  & 4.3 &4.2 & 3.4 & 3.8 &4.1 &3.2 &4.0& 3.7 \\
+%$\alpha$  & 0.74  & 0.76  & 0.731  & 0.69  & 0.71  & 0.71  & 0.71 & 0.69  & 0.73  & 0.686  & 0.712  \\
+%Ref  &\cite{Kleiber32}  &\cite{Gano38} &\cite{Brody45}    &\cite{Hayssen85} &\cite{Elgar87} &\cite{McNab88} &\cite{Heusner91} &\cite{Lovegrove00} &\cite{Symonds02} &\cite{White03} &\cite{Savage04} \\
+%\br
+%\end{tabular}
+%\end{indented}
+%\end{table}
+
+
 \begin{table}%
-\centering
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
-$b_0$ & 2.6  & 1.8  & 2.3  & 4.3 &4.2 & 3.4 & 3.8 &4.1 &3.2 &4.0& 3.7 \\
-$\alpha$  & 0.74  & 0.76  & 0.731  & 0.69  & 0.71  & 0.71  & 0.71 & 0.69  & 0.73  & 0.686  & 0.712  \\
-Ref  &\cite{Kleiber32}  &\cite{Gano38} &\cite{Brody45}    &\cite{Hayssen85} &\cite{Elgar87} &\cite{McNab88} &\cite{Heusner91} &\cite{Lovegrove00} &\cite{Symonds02} &\cite{White03} &\cite{Savage04} \\
-\hline
+%\centering
+\caption{\label{tab:alpha} Basal metabolic rate, $B = b_0 M^\alpha$. All regressions were calculated to standardize units (BMR in ml~O$_2$~h$^{-1}$, M in g). The averages are $\tilde{\alpha}$ = 0.72 $\pm$ 0.02 and $\tilde{b_0}$ = 3.4 $\pm$ 0.7.}
+\begin{indented}
+\item[] \begin{tabular}{ccc}
+\br
+$b_0$ &$\alpha$  &Ref  \\
+\mr
+ 2.6  & 0.74     &\cite{Kleiber32}  \\
+ 1.8  & 0.76     &\cite{Gano38} \\
+ 2.3  & 0.731    &\cite{Brody45} \\   
+ 4.3  & 0.69     &\cite{Hayssen85} \\
+ 4.2  & 0.71     &\cite{Elgar87} \\
+ 3.4  & 0.71     &\cite{McNab88} \\
+ 3.8  & 0.71     &\cite{Heusner91} \\
+ 4.1  & 0.69     &\cite{Lovegrove00} \\
+ 3.2  & 0.73     &\cite{Symonds02} \\
+ 4.0  & 0.686    &\cite{White03} \\
+ 3.7  & 0.712    &\cite{Savage04}\\ 
+\br
 \end{tabular}
-\caption{Basal metabolic rate, $B = b_0 M^\alpha$. All regressions were calculated to standardize units (BMR in ml~O$_2$~h$^{-1}$, M in g). The averages are $\tilde{\alpha}$ = 0.72 $\pm$ 0.02 and $\tilde{b_0}$ = 3.4 $\pm$ 0.7}
-\label{tab:alpha}
+\end{indented}
 \end{table}
 
 \begin{table}%
-\centering
-\begin{tabular}{|c|c|c|c|}
-\hline
-Fish                                     & Ref                                                       & $\lambda$                     & $\tau_{2/3}$                  \\ \hline
-Gymnosarda unicolor                      & ~~\cite{Joshi12}~~& ~~3.065~~ & ~~2.326~~ \\
-pinirampus pirinampus                    & \cite{Mateus07}                        & 2.945                         & 3.333                         \\
-pseudopaltystoma fasciatutum             & \cite{Mateus07}                        & 3.126                         & 7.692                         \\
-Zungaro jahu                             & \cite{Mateus07}                        & 3.228                         & 7.813                         \\
-pseudopaltystoma corruscans              & \cite{Mateus07}                        & 3.172                         & 7.874                         \\
-dolphinfish Coryphaena hippurus (male)   & \cite{Alejo-Plata11}                   & 3.144                         & 0.977                         \\
-dolphinfish Coryphaena hippurus (female) & \cite{Alejo-Plata11}                   & 2.848                         & 0.970                         \\
-Protosalanx hyalocranius                 & \cite{Tang12}                          & 2.990                         & 0.341                         \\
-oedalechlus labeo (male)                 & \cite{Matic-Skoko12}                   & 2.975                         & 7.463                         \\
-oedalechlus labeo (female)               & \cite{Matic-Skoko12}                   & 3.014                         & 5.525                         \\
-opsarrichthys bidens (male)              & \cite{Sui12}                           & 3.150                         & 3.226                         \\
-opsarrichthys bidens (female)            & \cite{Sui12}                           & 3.050                         & 3.846                         \\
-Sander Lucioperca                        & \cite{Perez-Bote12}                    & 3.010                         & 6.667                         \\ \hline
+\caption{\label{tab1} Parameters $\lambda$ and the growth time $\tau=\tau_{2/3}$ for each fish.  The average $\lambda$ is $\tilde{\lambda}$ = 3.06 $\pm$ 0.09.}
+\begin{indented}
+\item[] \begin{tabular}{cccc}
+\br
+Fish                                     & Ref                                    & $\lambda$                     & $\tau_{2/3}$\\ 
+\mr
+Gymnosarda unicolor                      & \cite{Joshi12}													&3.065 													& 2.326       \\
+pinirampus pirinampus                    & \cite{Mateus07}                        & 2.945                         & 3.333       \\
+pseudopaltystoma fasciatutum             & \cite{Mateus07}                        & 3.126                         & 7.692       \\
+Zungaro jahu                             & \cite{Mateus07}                        & 3.228                         & 7.813       \\
+pseudopaltystoma corruscans              & \cite{Mateus07}                        & 3.172                         & 7.874       \\
+dolphinfish Coryphaena hippurus (male)   & \cite{Alejo-Plata11}                   & 3.144                         & 0.977       \\
+dolphinfish Coryphaena hippurus (female) & \cite{Alejo-Plata11}                   & 2.848                         & 0.970       \\
+Protosalanx hyalocranius                 & \cite{Tang12}                          & 2.990                         & 0.341       \\
+oedalechlus labeo (male)                 & \cite{Matic-Skoko12}                   & 2.975                         & 7.463       \\
+oedalechlus labeo (female)               & \cite{Matic-Skoko12}                   & 3.014                         & 5.525       \\
+opsarrichthys bidens (male)              & \cite{Sui12}                           & 3.150                         & 3.226       \\
+opsarrichthys bidens (female)            & \cite{Sui12}                           & 3.050                         & 3.846       \\
+Sander Lucioperca                        & \cite{Perez-Bote12}                    & 3.010                         & 6.667       \\ 
+\br
 \end{tabular}
-\caption{Parameters $\lambda$ and the growth time $\tau=\tau_{2/3}$ for each fish.  The average $\lambda$ is $\tilde{\lambda}$ = 3.06 $\pm$ 0.09.}
-\label{tab1}
+\end{indented}
+
 \end{table}  
+
+
+
+
+
 
 Now we will analyze the relationship between our equation and the data existing in the literature, and we see that $\gamma= \beta=1$ only for $\lambda=\delta=3$ in discordance with the available data.
 
 \begin{table}
-\centering
-\begin{tabular}{|c|c|c|c|}
-\hline
+\caption{ \label{tablegamma} Values of $\delta$, $\beta$ and $\gamma$  from the values of  $\alpha$. In the first two lines we use the expected value $\lambda=3$, in the last line we use the empirical $\lambda=3.06 \pm 0.09$. }
+\begin{indented}
+\item[] \begin{tabular}{cccc}
+\br
 $\alpha$        & $\delta$   & $\gamma$   & $\beta$    \\
-\hline
+\mr
 $2/3$       & 3          & 1          & 1          \\
 $3/4$       & 4          & 4/3          & 4/3        \\
 0.72 $\pm$ 0.02 & 3.6 $\pm$ 0.1& 1.17 $\pm$ 0.05& 1.20 $\pm$ 0.05\\
-\hline
+\br
 \end{tabular}
-\caption{Values of $\delta$, $\beta$ and $\gamma$  from the values of  $\alpha$. In the first two lines we use the expected value $\lambda=3$, in the last line we use the empirical $\lambda=3.06 \pm 0.09$.}
-\label{tablegamma}
+\end{indented}
+
 \end{table}
 
 In Table 2 we show the values of the parameters for several species of fishes. There we display the empirical values of $\lambda$ and the growth time $\tau$ obtained using  Eq. (\ref{Ber}). Most of the authors treat the data with a  large number of decimals, however,   if we consider the standard deviation we see that the alleged accuracy is exaggerated and we have to look at those data with care. The major problem however lies in the many different ways to treat the data.
@@ -183,6 +231,7 @@ $\gamma=\beta=1$. For $\alpha=3/4$  we get $\delta=4$ and  $\gamma=\beta=4/3$.
 From the empirical values $\alpha=0.72 \pm 0.02$ and $\lambda=3.06 \pm 0.09$  from table  \ref{tab1}, we get $\gamma=1.17 \pm 0.05$ and $\beta=1.20 \pm 0.05$.
 From both second and third line  we note that both $\beta$ and $\gamma$ are always great than $1$, consequently the simple Bertalanffy equation, Eq. (\ref{Ber}), does not apply and if we want more precise information we need to use the more complete form Eq. (\ref{NBer}). Table \ref{tablegamma} shows as well a very small difference between the exponents $\beta$ and  $\gamma$.   Since  $\beta-\gamma \propto \lambda-3$,  and  $\lambda$ is very close to $3$, $\bar{\lambda} = 3.06 \pm 0.09$,  it is not surprising that we get the average values,  $\bar{\beta} \approx \bar{\gamma}$. Indeed, from the available data $\beta$ and $\gamma$ are very close, and for this particular issue more precise data are need to definitive conclusion. Thus, we can conclude that $\gamma \approx \beta > 1$, and we need to replace  Eq. (\ref{Ber}) by Eq. (\ref{NBer}).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Growth Time}
 
@@ -316,19 +365,19 @@ We acknowledge the support of the Conselho Nacional de Desenvolvimento Cient\'{i
 
 \bibitem{Katsanevakis08}{S. Katsanevakis and C.D. Maravelias}, {Modelling fish growth: multi-model inference as a better alternative to a priori using von Bertalanffy equation}, \textit{Fish Fish.}, \textbf{9}, {178} {(2008)}
 
-\bibitem{Meinhardt07}{H. Meinhardt, A.F. Quadros, and P.B. Araujo}, {Growth curve of Balloniscus glaber Araujo \& Zardo (Crustacea, Isopoda, Oniscidea) from Parque Estadual de Itapu\~{a}, Rio Grande do Sul, Brazil}, \textit{Rev. Bras. Zool. }, \textbf{24}, {1108} {(2007)}.
+\bibitem{Meinhardt07}{H. Meinhardt, A.F. Quadros, and P.B. Araujo}, {Growth curve of Balloniscus glaber Araujo \& Zardo (Crustacea, Isopoda, Oniscidea) from Parque Estadual de Itapuã, Rio Grande do Sul, Brazil}, \textit{Rev. Bras. Zool. }, \textbf{24}, {1108} {(2007)}.
 
-\bibitem{Joshi12}{ K.K. Joshi}, {Fishery, biology and dynamics of dogtooth tuna, Gymnosarda unicolor (R\"{u}ppell, 1838) exploited from Indian seas}, \textit{Indian J. Fish.}, \textbf{59}, {75} {(2012)}.
+\bibitem{Joshi12}{ K.K. Joshi}, {Fishery, biology and dynamics of dogtooth tuna, Gymnosarda unicolor (Rüppell, 1838) exploited from Indian seas}, \textit{Indian J. Fish.}, \textbf{59}, {75} {(2012)}.
 
 \bibitem{Mateus07}{L.A.F. Mateus and J.M.F. Penha }, {Din\^{a}minca poulacional de quatro esp\'{e}cies de grandes bagres na bacia do rio Cuiab\'{a}, Pantanal norte, Brasil (siluriformes, Pimelodidae)}, \textit{ Rev. Bras. Zool.}, \textbf{24}, 87 {(2007)}.
 
-\bibitem{Alejo-Plata11}{C. Alejo-Plata }, {Edad y crecimiento del dorado Coryphaena hippurus, en el Golfo de Tehuantepec, M\'{e}xico}, \textit{Rev. Biol.}, \textbf{46}, 125 {(2011)}.
+\bibitem{Alejo-Plata11}{C. Alejo-Plata }, {Edad y crecimiento del dorado Coryphaena hippurus, en el Golfo de Tehuantepec, México}, \textit{Rev. Biol.}, \textbf{46}, 125 {(2011)}.
 
 \bibitem{Tang12}{F.J. Tang, W. Liu, J. Wang, R. Froese, and S. Xie}, {Growth, length-weight relationship and biological information on the clearhead icefish (Protosalanx hyalocranius Abbott, 1901) in Lake Khanka (Xingkai)}, \textit{J. Appl. Ichthyol.}, \textbf{28}, 842 {(2012)}.
 
 \bibitem{Matic-Skoko12}{S. Mati{\'{c}}-Skoko, J. Ferri, M. Kraljevi{\'{c}}, and A. Pallaoro }, {Age estimation and specific growth pattern of boxlip mullet, Oedalechilus labeo (Cuvier, 1829) (Osteichthyes, Mugilidae), in the eastern Adriatic Sea}, \textit{J. Appl. Ichthyol.}, \textbf{28}, 182 (2012).
 
-\bibitem{Sui12}{ XY~Sui, YZ~Yan, and YF~Chen}, {Age, Growth, and Reproduction of Opsariichthys bidens (Cyprinidae) from the Qingyi River at Huangshan Mountain, China}, \textit{Zool. Stud.}, \textbf{51}, 476 {(2012)}.
+\bibitem{Sui12}{ XY~Sui, YZ~Yan, and YF~Chen}, {Age, Growth, and Reproduction of Opsariichthys bidens    (Cyprinidae) from the Qingyi River at Huangshan Mountain, China}, \textit{Zool. Stud.}, \textbf{51}, 476 {(2012)}.
 
 \bibitem{Perez-Bote12}{J.L. P{\'{e}}rez-Bote and R. Roso }, {Growth and length-weight relationships of Sander lucioperca (Linnaeus, 1758) in the Alc{\'{a}ntara Reservoir, south-western Spain: comparison with other water bodies in Eurasia}, \textit{J. Appl. Ichthyol. }, \textbf{28}, 264 {(2012)}.
 
